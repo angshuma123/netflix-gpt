@@ -4,11 +4,9 @@ import Header from './Header';
 import useNowPlayingMovies from '../hooks/useNowPlayingMovies';
 
 const Browse = () => {
-  const { getNewMovies } = useNowPlayingMovies();
+   useNowPlayingMovies();
 
-  useEffect(() => {
-    getNewMovies();
-  }, []);
+ 
 
   return (
     <>
